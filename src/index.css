@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,label,span {
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body, html, .App, #root, .auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.auth-wrapper {
+  padding-top: 5%;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-inner {
+  width: 450px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+
+
+.chooses{
+    color: white;
+    display: inline-block;
+    background: #fff;
+    color:#022648;
+    padding: 7px 15px;
+    font-weight: 700;
+    border-radius: 3px;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-left: 17%;
+    width: 70%;
+}
+
+.chooses:hover{
+    color: #022648;
+    opacity: 0.6;
+}
+
+.choose{
+    color: white;
+    display: inline-block;
+    background: #fff;
+    color:#022648;
+    padding: 7px 15px;
+    font-weight: 700;
+    border-radius: 3px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.choose:hover{
+    color: #022648;
+    opacity: 0.6;
+}
+
+.choose::-webkit-file-upload-button {
+    color: white;
+    display: inline-block;
+    background: #fff;
+    border-radius: 1px;
+    border: 1px solid #022648;
+    color:#022648;
+    padding: 7px 15px;
+    font-weight: 700;
+    border-radius: 3px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+
+.choose::-webkit-file-upload-button:hover {
+    color: #022648;
+    opacity: 0.6;
+    border-color: #7F7F7F;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+
+label {
+  display: block;
+  letter-spacing: 4px;
+  padding-top: 25px;
+  text-align: left;
+}
+label .label-text {
+  color: #022648;
+  cursor: text;
+  font-size: 10px;
+  line-height: 20px;
+  text-transform: uppercase;
+  -moz-transform: translateY(-34px);
+  -ms-transform: translateY(-34px);
+  -webkit-transform: translateY(-34px);
+  transform: translateY(-34px);
+  transition: all 0.3s;
+}
+label input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #022648;
+  color: black;
+  font-size: 20px;
+  letter-spacing: -1px;
+  outline: 0;
+  padding: 5px 20px;
+  text-align: left;
+  transition: all 0.3s;
+  width: 200px;
+}
+label input:focus {
+  max-width: 70%;
+  width: 400px;
+}
+label input:focus + .label-text {
+  color: #022648;
+  font-size: 13px;
+  -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+}
+label input:valid + .label-text {
+  font-size: 13px;
+  -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+}
